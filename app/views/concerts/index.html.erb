@@ -1,0 +1,20 @@
+<h1>List of concerts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <td><%= t('.date') %></td>
+      <td><%= t('.bands') %></td>
+      <td><%= t('.city') %></td>
+      <td><%= t('.country') %></td>
+    </tr>
+  </thead>
+  <% @concerts.each do |concert| %>
+    <tr>
+      <td><%= concert.date %></td>
+      <td><%= concert.bands.first.name %></td>
+      <td><%= concert.city %></td>
+      <td><%= concert.country %></td>
+    </tr>
+  <% end %>
+</table>

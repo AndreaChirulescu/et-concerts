@@ -56,5 +56,6 @@ Rails.application.routes.draw do
 
   resources :bands
   resources :venues
+  resources :concerts
 
 end
